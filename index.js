@@ -80,7 +80,7 @@ function enumeration(data, maxmin, callback) {
 
     let r = rowMax;
     while(r >= 0) {
-        c = colMax;
+        let c = colMax;
         while(c >= 0) {
             answer[r][c] = callback({ ...maxmin[r], el: data[r][c] });
             c--;
